@@ -1,206 +1,467 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Partners in Crime Survey</title>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Goblin+One|Lora|Macondo+Swash+Caps" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/survey.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css\style.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container content">
-		<h1>Welcome to Partners in Crime Survey</h1>
-		<p>Take a quick survey to find your partner in crime. These questions are answered by the numbers 1 through 5 wih 1 indicating you strongly disagree while 5 is you strongly agree.</p>
-		<form>
-			<div class="form-group">
-				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <h1>Questionnaire</h1>
+			    <h3 class="display-4">Answer the questions using a scale of 1 (strongly disagree) to 5 (strongly agree)</h3>
+			  </div>
 			</div>
-			<div class="form-group">
-				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
-			</div>
-			<div class="form-group">
-				<label for="question1">I am willing to spend time in jail for my crimes.</label>
-				<select class="form-control" id="question1">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question2">If sh## hits the fan I am going to run. </label>
-				<select class="form-control" id="question2">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question3">Laws don't pertain to people like me.</label>
-				<select class="form-control" id="question3">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question4">I am not looking to commit real crimes.</label>
-				<select class="form-control" id="question4">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question5">I enjoy retelling stories about my adventures and having a good laugh.</label>
-				<select class="form-control" id="question5">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question6">I like my drinks strong</label>
-				<select class="form-control" id="question6">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question7">I am super honest and will tell you how it is.</label>
-				<select class="form-control" id="question7">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question8">I am just looking for someone who knows what my next move will be.</label>
-				<select class="form-control" id="question8">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question9">You are willing to do anything for your parnter in crime.</label>
-				<select class="form-control" id="question9">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="question10">I dont like alchohol</label>
-				<select class="form-control" id="question10">
-					<option value="empty"></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-		</form>
-		<div class="text-center">
-			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
-		
-	
-		<div id="myMatch" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your Partner in crime!</h1>
+		</div>
+
+
+		<div class="row" >
+			<div class="col-lg-2" id="spacer"></div>
+			<div class="col-lg-8">
+
+	        <div class="card">
+	        	<!-- <div class="panel-heading">
+	            	<h2 class="panel-title"><strong>About You</strong></h2>
+	          	</div> -->
+
+	          	<div class="card-body">
+	          		<h2>About You</h2>
+	          		<hr>
+
+		            <form method="POST" role="form">
+
+		              <div class="form-group">
+		                <label for="name">Name (required)</label>
+		                <input type="text" class="form-control" id="name" required>
+		              </div>
+
+		              <div class="form-group">
+		                <label for="photo">Link to Photo (required)</label>
+		                <input type="text" class="form-control" id="photo" required>
+		              </div>
+					</form>
+	            </div>
+
+
+				<div class="card-body">
+					<h2>Questions</h2>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-1"><h4>#1. I am willing to spend time in jail for my crimes.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q1" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q1" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q1" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q1" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
 					</div>
-					<div class="modal-body">
-						<h2 id="PartnerInCrie"></h2>
-						<img id="PartnerInCrimePhoto" src="#">
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-2"><h4>#2. If sh## hits the fan I am going to run.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q2" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q2" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q2" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q2" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q2" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-3"><h4>#3. Laws don't pertain to people like me.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q3" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q3" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q3" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q3" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q3" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-4"><h4>#4. I am not looking to commit real crimes.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q4" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q4" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q4" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q4" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q4" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-5"><h4>#5. I enjoy retelling stories about my adventures and having a good laugh.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q5" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q5" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q5" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q5" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q5" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-6"><h4>#6. I like my drinks strong.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q6" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q6" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q6" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q6" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q6" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-7"><h4>#7. I am super honest and will tell you how it is.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q7" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q7" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q7" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q7" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q7" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-8"><h4>#8. You believe community activism and community service are two things everyone should engage in.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q8" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q8" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q8" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q8" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q8" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-9"><h4>#9.I am just looking for someone who knows what my next move will be.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q9" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q9" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q9" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q9" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q9" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+	            	<div class="form-group">
+
+				    	<label for="question-10"><h4>#10. You are willing to do anything for your parnter in crime.</h4></label>
+				    	<div class="card-body" id="options">
+						    <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q10" id="inlineRadio1" value="1"> 1
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q10" id="inlineRadio2" value="2"> 2
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q10" id="inlineRadio3" value="3" > 3
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q10" id="inlineRadio4" value="4" > 4
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="radio" name="q10" id="inlineRadio5" value="5" > 5
+							  </label>
+							</div>
+						</div>
+					</div>
+
+
+	            	<br>
+	            	<div class="text-right" >
+	              		<button type="button" class="btn btn-secondary btn-md submit" id="add-btn"  data-toggle="modal" data-target="#myModal" >Find Friends</button>
+	            	</div>
+	          	</div>
+	        </div>
 		</div>
 	</div>
 
-	<footer>
-		<div class="container">
-
-            <a href="https://github.com/cglerupcoding/FriendFinder">GitHub Repo</a>
-		</div>
-	</footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>t>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="partner">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="partner">Your new Partner in Crime!</h4>
+	      </div>
+	      <div class="modal-body" id="friend-info">
+					<h5 id="friend-name"></h5>
+					<img id="friend-photo" src="" alt="Meet your new parner in crime!">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </body>
 </html>
 
+
+<!-- Front-end JavaScript-->
+<!-- <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script> -->
 <script type="text/javascript">
-	$("#submitBtn").on("click", function(event) {
-		event.preventDefault();
-		// Form validation
-		var valid = true;
-		if($("#name").val() === "" || $("#photo").val() === "") {
-			valid = false;
-		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
-			valid = false;
-		}
-		if(valid === true) {
-			var newUser = {
-				name: $("#name").val().trim(),
-				photo: $("#photo").val().trim(),
-				scores: [
-					$("#question1").val(),
-					$("#question2").val(),
-					$("#question3").val(),
-					$("#question4").val(),
-					$("#question5").val(),
-					$("#question6").val(),
-					$("#question7").val(),
-					$("#question8").val(),
-					$("#question9").val(),
-					$("#question10").val()
-				]
-			};
-			var currentURL = window.location.origin;
-			// Ajax call for receiving response after POST req
-			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#PartnerInCrime").text(data.name);
-				$("#PartnerInCrimePhoto").attr("src", data.photo);
-				$("#myMatch").modal("toggle");
+	var allAnswers = [];
+	$(".submit").on("click", function(event){
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			answers: function(){
+				for (i=1; i < 11; i++){
+					var answer = $('input[name="q'+i+'"]:checked').val();
+					allAnswers.push(parseInt(answer));
+				}
+				return allAnswers;
+			}
+		};
+		console.log(newFriend);
+		$.post("/api/friends", newFriend, function(data){
+			if (data) {
+				alert("Get ready to make new friends!");
+			}
+			else {
+				alert("Uh-oh! Something went wrong with your survey!");
+			}
+			// clears the form on submit
+			$("#name").val("");
+			$("#photo").val("");
+			$('input[type="radio"]').attr('checked', false);
+		}).done(function() {
+			// calls friends api
+			$.ajax({
+					url: "/api/friends",
+					method: "GET",
+					datatype: 'json'
+			}).done(function(res, err) {
+				if(err) {
+					console.log(err);
+				}
+				// console.log(res);
+				var current = res[res.length-1];
+				// console.log(current);
+				// stores new user's best match and displays to modal
+				var partner = current.crimePartner;
+				console.log(partner);
+				$("#friend-name").text("Hi " + current.name + ", my name is " + partner.name + "!");
+				$("img#friend-photo").attr("src", partner.photo);
 			});
-		} else {
-			// If a required field is missing, show alert
-			alert("Survey is incomplete!");
-		}
-	});
+		}); // ENDS post.done()
+	}); // ENDS button onClick()
 </script>
